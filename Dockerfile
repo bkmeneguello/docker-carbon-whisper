@@ -9,7 +9,8 @@ RUN apk add --no-cache python python-dev py-pip git gcc musl-dev &&\
     apk del --no-cache python-dev git gcc musl-dev &&\
     rm -rf /tmp/*
 
-VOLUME /opt/graphite/storage /opt/graphite/conf
+#VOLUME /opt/graphite/conf
+VOLUME /opt/graphite/storage
 
 EXPOSE 2003 2004 7002
 
